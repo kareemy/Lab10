@@ -30,8 +30,8 @@
 
 ## Task 3: Make the Page Model 
 1.	Create a Page Model (.cshtml.cs file) for your Razor Page. Remember the basic code to place in a page model? Refer to `Index.cshtml.cs` or Lab 8.
-   * Don’t forget the change the class name to match the name of your Razor Page.
-   * Connect the Razor Page to the Page Model. 
+      * Don’t forget the change the class name to match the name of your Razor Page.
+      * Connect the Razor Page to the Page Model. 
 2. Create an empty `OnPost()` method. This method will be called when you hit Submit on your form.
 
 ## Task 4: Add Logging and Verify HTTP Post
