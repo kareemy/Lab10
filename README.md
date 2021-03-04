@@ -29,3 +29,32 @@
 ![Image of form](https://i.imgur.com/KzfnP33.png)
 
 ## Task 3: Make the Page Model 
+1.	Create a Page Model (.cshtml.cs file) for your Razor Page. Remember the basic code to place in a page model? Refer to `Index.cshtml.cs` or Lab 8.
+   * Don’t forget the change the class name to match the name of your Razor Page.
+   * Connect the Razor Page to the Page Model. 
+2. Create an empty `OnPost()` method. This method will be called when you hit Submit on your form.
+
+## Task 4: Add Logging and Verify HTTP Post
+1.	Remember Logging in Lab 9? Add code to enable logging in your page model.
+2.	Log an **information** message inside your `OnPost()` method that will print out “OnPost() Called”.
+3.	Filter out all the Microsoft logs like you did in Lab 9 so that only your log message is displayed.
+4.	Run your project, fill out the form, and hit submit. Verify that the log message is displayed to the console.
+5.	If the message is not displayed, it’s time to debug. Otherwise, great work!
+
+## Submit your assignment
+1. Save your program and run it. At the terminal prompt, type `dotnet run`.
+2. Edit `README.md` and put your name at the top.
+3. Push your changes to GitHub:
+    - Click the source control icon in VS Code
+    - Type in a commit message
+    - Click the checkbox icon to commit. (Click yes on the message box to stage your commit)
+    - Click the 3 dots icon (...) for more actions and click Push.
+4. Or you can push your changes to GitHub using the Terminal:
+    ```
+    git add -A
+    git commit -m "Ready for grading"
+    git push
+    git status
+    ```
+4. Verify that your changes are on GitHub.
+6. Congratulations! Your lab 5 assignment is complete. 
