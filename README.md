@@ -18,11 +18,14 @@
 7. Find an image online for the second column and use the `<img>` tag to link to it.
     * The image is a static file. Where should you put it so that you can link to it properly?
 8. Row 2 should have 3 columns of all different sizes. What should the sizes add up to?
-9. Give the columns a border and place whatever text you like in each column.
+9. Give the columns a border and place whatever text you like in each column. 
+10. Your entire page should look similar to the following:
+
 ![Image of webpage](https://i.imgur.com/yGDMTOs.png)
 
 ## Task 2: Add a Form to your Razor Page
 1. In Column One, delete the text and put HTML/Bootstrap code for a form that uses the HTTP Post request. The form should look like the following:
+
 ![Image of form](https://i.imgur.com/KzfnP33.png)
 
 ## Task 3: Make the Page Model 
