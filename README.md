@@ -114,7 +114,7 @@ Data Validation requires two parts – data annotations on the server side that 
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
 ```
-3.	Add the `[Required]` and `[StringLength]` validation rules to your page model (the .cshtml.cs file).
+3.	Add the `[Required]` and `[StringLength]` validation rules to your page model (the .cshtml.cs file). For `[StringLength]` use a max length of 60 and minimum length of 3.
 4.	Run your project and test it out.
 
 ## Task 7: Data Validation Challenge - Extra Credit
