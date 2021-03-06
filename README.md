@@ -123,7 +123,11 @@ Visit https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation for exa
 1.	On your form, add an input tag (text box) for a credit card number.
 2.	Review the previous rounds in this lab and write all the required code for the credit card number following the example for FirstName. 
 3.	Give the credit card number the proper data validation rules. Follow the example from Round 6 but use credit card validation rules.
-4.	The website at https://www.paypalobjects.com/en_AU/vhelp/paypalmanager_help/credit_card_numbers.htm 
+4.	Credit Card validation requires one more JS file imported. Open `Pages\Shared\_ValidationScriptsPartial.cshtml` and add this line:
+```
+<script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
+```
+5.	The website at https://www.paypalobjects.com/en_AU/vhelp/paypalmanager_help/credit_card_numbers.htm 
 has sample credit card numbers. Verify that your validation rules work properly.
 
 ## Submit your assignment. You are now finished with Lab 10 Part 2
