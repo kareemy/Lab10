@@ -76,3 +76,32 @@ Model binding links data in the web page (frontend or client-side) to C# variabl
 [BindProperty]
 public string FirstName {get; set;}
 ```
+
+## Task 2: Model Binding Client-Side Part
+1.	Open the Razor Page (the .cshtml file). Use tag helpers to link the `<label>` and `<input>` tags to your C# properties you created in Round 1.
+      * The tag helper you will use is `asp-for="PropertyName"`. PropertyName should match the exact name of the C# property  (e.g. `asp-for="FirstName"`).
+2.	Delete the text between the `<label>` opening and closing tags. The `asp-for` tag helper automates writing that text.
+3.	Run your project. Click view source in the web browser and see what the HTML code looks like now with the tag helpers.
+
+## Task 3: Verify
+1.	We added logging last time. Change the log message in OnPost() to print out the content of the FirstName and LastName properties.
+2.	Run your project again and confirm that those properties are being set correctly.
+
+## Task 4: Bring it Back Around
+1.	Add code to your Razor Page that will display the contents of the FirstName and LastName properties back on the webpage. Remember how to display C# variables in Razor Pages?
+2.	Run your project again and take a look.
+
+## Task 5: Data Annotations
+You may have noticed that the labels for your textboxes say “FirstName” and “LastName” now with no spaces. The asp-for tag helper pulls the exact variable name as the label name. Usually we don’t want that.
+
+1.	Add the following using directives to enable Data Annotations: 
+```
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+```
+2.	Add a Data Annotation to your properties on the page model right below `[BindProperty]`:
+`[Display(Name = "First Name")]`
+3.	Run your project again and take a look.
+
+
+
