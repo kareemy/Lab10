@@ -103,5 +103,28 @@ using System.ComponentModel.DataAnnotations.Schema;
 `[Display(Name = "First Name")]`
 3.	Run your project again and take a look.
 
+## Task 6: Data Validation
+Data Validation requires two parts – data annotations on the server side that specify the validation rules and tag helpers on the client side to enforce the rules.
 
+1.	Open your razor page (.cshtml file) and add the following HTML after the `<input>` tag for each textbox. Change `"FirstName"` to match the proper variable name.
+`<span asp-validation-for="FirstName" class="text-danger"></span>`
+2.	Bring in the JS code to perform the validation. At the bottom of your razor page add the following:
+```
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+```
+3.	Add the `[Required]` and `[StringLength]` validation rules to your page model (the .cshtml.cs file).
+4.	Run your project and test it out.
+
+## Task 7: Data Validation Challenge - Extra Credit
+Visit https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation for examples and other validation rules you can use.
+
+1.	On your form, add an input tag (text box) for a credit card number.
+2.	Review the previous rounds in this lab and write all the required code for the credit card number following the example for FirstName. 
+3.	Give the credit card number the proper data validation rules. Follow the example from Round 6 but use credit card validation rules.
+4.	The website at https://www.paypalobjects.com/en_AU/vhelp/paypalmanager_help/credit_card_numbers.htm 
+has sample credit card numbers. Verify that your validation rules work properly.
+
+## Submit your assignment. You are now finished with Lab 10 Part 2
 
