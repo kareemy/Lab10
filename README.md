@@ -56,5 +56,23 @@
     git push
     git status
     ```
-4. Verify that your changes are on GitHub.
-6. Congratulations! Your lab 5 assignment is complete. 
+5. Verify that your changes are on GitHub.
+6. Congratulations! Your lab 10 part 1 assignment is complete. Move on to part 2 next week.
+
+
+# CIDM 3312 Lab 10 Part 2: Model Binding
+
+## Task 0: Prepare Your Environment
+
+1. Open Lab 10 Part 1 in Visual Studio Code. Part 2 will push to the same repository, so you will build on your part 1 submission.
+
+## Task 1: Model Binding Server-Side Part
+Model binding links data in the web page (frontend or client-side) to C# variables in your model (backend or server-side). Your goal is to connect the data that the user inputs in your form to your page model.
+
+1.	Your form has text boxes for First Name and Last Name. Create a FirstName property and a LastName property in your Page Model class (the .cshtml.cs file)
+2.	Add the `[BindProperty]` decorators to your properties. It is this line of code that sets up the model binding. Your code should look like this:
+
+```
+[BindProperty]
+public string FirstName {get; set;}
+```
